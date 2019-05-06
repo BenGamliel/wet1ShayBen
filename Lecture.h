@@ -1,7 +1,7 @@
 #ifndef PP_LECTURE_H
 #define PP_LECTURE_H
 
-#include "avl.h"
+#include "avlStruct.h"
 
 class Course;
 
