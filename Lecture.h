@@ -44,27 +44,22 @@ std::ostream &operator<<(std::ostream &os, const Lecture_Key &lec) {
 }
 
 class Lecture{
-    int course_number;
     int room;
     int hour;
     Course *c;
 public:
-    Lecture() : course_number(0), room(0), hour(0){
+    Lecture() : room(0), hour(0){
         c = NULL;
     }
 
-    Lecture(int course_number_,int room_,int hour_,Course *course) : course_number(course_number_), room(room_), hour(hour_){
-        c=course;
+    Lecture(int room_,int hour_) : room(room_), hour(hour_){
+        c=NULL;
     }
 
     ~Lecture(){};
 
     Course *getCourse(){
         return this->c;
-    }
-    
-    int getCourseNumber() const{
-        return course_number;
     }
 
     int getHour() const{
