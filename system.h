@@ -3,7 +3,7 @@
 #define PP_SYSTEM_H
 
 
-#include "avl.h"
+#include "avlStruct.h"
 #include "Course.h"
 #include "library.h"
 
