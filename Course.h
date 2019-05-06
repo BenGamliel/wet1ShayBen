@@ -8,6 +8,7 @@ class Course{
     int id;
     int numOfLectures;
     AVLTree<Lecture *,Lecture_Key,compareLectures> *lecturesTree;
+    //Ben ya zain im enaim
 public:
     Course(int id_) : id(id_), numOfLectures(0){
         this->lecturesTree = new AVLTree<Lecture *,Lecture_Key,compareLectures>();
